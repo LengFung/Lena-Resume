@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="renderer" content="webkit">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>[Resume]LenaFeng-Configuration Consultant/GZ</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/typo.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script>
+        function avatarLoading() {
+            document.getElementsByClassName('avatar')[0].style.display = 'block';
+            document.getElementsByClassName('loading')[0].style.display = 'none';
+        }
+    </script>
+</head>
+
+<body>
+
+    <header class="header"></header>
+
+    <article class="container">
+        <section class="side" id="side">
+
+            <!-- 左栏固定开关，记得及时删除这段代码 Start-->
+            <label class="switch" style="display: none;" onchange="switchFixed()">
+                <script type="text/javaScript">
+                    function switchFixed(){
+                        var value = document.getElementById('side').style.position === 'fixed' ? 'absolute' : 'fixed';
+                        document.getElementById('side').style.position = value;
+                    }
+                </script>
+                <input id="cb" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <style>
+                @media (min-width: 414px){
+                    .switch{position:relative;display:inline-block!important;width:60px;height:34px;}
+                    .switch input{display:none;}
+                    .slider{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background-color:#ccc;-webkit-transition:.4s;transition:.4s;}
+                    .slider:before{position:absolute;content:"";height:26px;width:26px;left:4px;bottom:4px;background-color:white;-webkit-transition:.4s;transition:.4s;}
+                    input:checked + .slider{background-color:#1abc9c;}
+                    input:focus + .slider{box-shadow:0 0 1px #1abc9c;}
+                    input:checked + .slider:before{-webkit-transform:translateX(26px);-ms-transform:translateX(26px);transform:translateX(26px);}.slider.round{border-radius:34px;}
+                    .slider.round:before{border-radius:50%;}
+                }
+            </style>
+            <!-- 左侧固定开关，记得及时删除这段代码 End-->
+
+            <!-- 个人肖像 -->
+            <section class="me">
+                <section class="portrait">
+                    <div class="loading">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <!-- 头像照片 -->
+                    <img class="avatar" src="assets\images\image2.png" onload="avatarLoading()">
+                </section>
+
+                <h1 class="name">Lena Feng</h1>
+                <h4 class="info-job">Configuration Consultant</h4>
+
+            </section>
+
+            <!-- 基本信息 -->
+            <section class="profile info-unit">
+                <h2>
+                    <i class="fa fa-user" aria-hidden="true"></i>Basic Information</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>Personal Info</label>
+                        <span>Lena Feng / Female</span>
+                    </li>
+                    <li>
+                        <label>Experience</label>
+                        <span>15 years</span>
+                    </li>
+                    <li>
+                        <label>Languages</label>
+                        <span>English、Cantonese、Mandarin</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 联系方式 -->
+            <section class="contact info-unit">
+                <h2>
+                    <i class="fa fa-phone" aria-hidden="true"></i>Contact Information</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>Phone</label>
+                        <a href="tel:13820625141" target="_blank">136-5079-8526</a>
+                    </li>
+                    <li>
+                        <label>Email</label>
+                        <a href="mailto:agneslen@163.com" target="_blank">294193690@qq.com</a>
+                    </li>
+                    <li>
+                        <label>profile</label>
+                        <a href="https://agneslen.github.io/" target="_blank">agneslen.github.io</a>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 技能点 -->
+            <section class="skill info-unit">
+                <h2>
+                    <i class="fa fa-code" aria-hidden="true"></i>Skills</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>BluePrism</label>
+                        <progress value="95" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>Power Platform</label>
+                        <progress value="90" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>MS PAD</label>
+                        <progress value="95" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>VBA</label>
+                        <progress value="95" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>Alteryx</label>
+                        <progress value="90" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>Agile</label>
+                        <progress value="85" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>JIRA</label>
+                        <progress value="85" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>Confluence</label>
+                        <progress value="90" max="100"></progress>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="qrcode info-unit">
+                <h2><i class="fa fa-qrcode" aria-hidden="true"></i>QR Code</h2>
+                <hr/>
+                <img src="assets/images/qrcode.png" style="width: 100%;">
+            </section>
+
+            <!-- 技术栈 -->
+            <div class="stack info-unit">
+                    <h2><i class="fa fa-code" aria-hidden="true"></i>Tech Stack</h2>
+                    <hr/>
+                    <ul>
+                        <li>
+                            <label>Develop</label>
+                            <span>Git、Github、HTML5、Visual Studio、BluePrism、Power Automate Desktop、Power Platform、Power Apps、AI Builder、Alteryx、VBA、Marco</span>
+                        </li>
+                        <li>
+                            <label>Testing</label>
+                            <span>Postman、Insomnia</span>
+                        </li>
+                        <li>
+                            <label>Database</label>
+                            <span>Access、MySQL、Oracle、SQLserver</span>
+                        </li>
+                        <li>
+                            <label>Process Analysis</label>
+                            <span>Power BI、Tableau</span>
+                        </li>
+                        <li>
+                            <label>Project Management</label>
+                            <span>Agile、JIRA、Confluence</span>
+                        </li>
+                    </ul>
+                </div>
+        </section>
+
+        <section class="main">
+
+
+            <!-- 工作经历 -->
+            <section class="work info-unit">
+                <h2>
+                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>Work Experience</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <span> HSBC Electronic Data Processing (Guangdong) Limited - Automation Ops Transformation，Configuration Consultant</span>
+                            <time>2024.11 - Present</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li><mark>Project Manager</mark>: plays a crucial role in tracking the project plan, monitoring development progress, and ensuring that delivery targets are met. Use tools like Agile boards, Kanban, confluence to visualize progress and identify potential bottlenecks. Manage risks and dependencies, ensuring that any delays are mitigated promptly. The ultimate goal is to deliver the RPA solution on time, within scope, and within budget while maintaining stakeholder confidence.</li>
+                            <li><mark>Process Analyst</mark>: acts as a bridge between technical teams and business stakeholders, fostering collaboration and ensuring a structured approach. Analyze business processes, identify automation opportunities, and document requirements to align RPA development with organizational goals. A key responsibility is maintaining best practices, ensuring that automations are scalable, secure, and compliant. By facilitating communication between IT and business units, helps maximize measurable benefits and ROI in automation initiatives. such as cost savings, improved accuracy, and faster processing times.</li>
+                            <li><mark>RPA Mentor</mark>: provides expertise in managing multiple RPA projects simultaneously. Focus on clear communication with stakeholders, aligning expectations, resolving conflicts, and ensuring transparency in delivery timelines. Also train and guide developers, promoting best practices in coding (e.g., reusability, exception handling) and governance. Ensures that automation initiatives remain aligned with business objectives while maintaining efficiency and quality across projects.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>HSBC Electronic Data Processing (Guangdong) Limited - Automation Ops Transformation，Configuration Analyst</span>
+                            <time>2022.04 - 2024.10</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li><mark>POD Lead</mark>: Leading 15 RPA projects demonstrates expertise in process automation, stakeholder management, and technical oversight.</li>
+                            <li><mark>RPA Mentor</mark>: Ensuring smooth execution requires thorough code reviews and mentoring junior developers to maintain high-quality automation standards.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>HSBC Electronic Data Processing (Guangdong) Limited - HASE WPB CSEM，Senior Financial Services Specialist</span>
+                            <time>2017.09 - 2022.03</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li><mark>RPA Configurator</mark>: Develop 4 RPA projects, design VBA Macro tools and maintain Access databases.</li>
+                            <li><mark>UAT Tester</mark>: Support for RPA and Artemis UAT testing, report defects and daily result.</li>
+                            <li><mark>Trainer</mark>: Lead and conduct accreditation training for new team members.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>Bank of East Asia Data Processing Limited - Credit Card Dept，  Credit Assessor Clerk</span>
+                            <time>2010.10 - 2017.08</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>Responsible for credit approval process, review and make decision of credit cards applications by assessing applicants' financial history and risk factors.</li>
+                            <li>Analyzing credit reports, verifying income documentation, and ensuring compliance with bank policies and regulatory requirements.</li>
+                            <li>Provide extraordinary service through phone interactions with customers.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 项目经验 -->
+            <section class="project info-unit">
+                <h2>
+                    <i class="fa fa-terminal" aria-hidden="true"></i>Project Experience</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <span>Project Sphere & Saturn</span>
+                            <time>2025.06 - 2025.10</time>
+                        </h3>
+                        <ul class="info-content">
+                        	<li>Project Introduction：Large scale project with cross-team collaboration, on-off automation solution to replace huge manual efforts due to business migration</li>
+                            <li>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [Responsibility]Gather user requirement and assess RPA feasibility, confirm development scope and design solution diagram, initiate development plan and project plan, consult in coding and governance
+                                <br/>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [Enviorment]<mark>HUB System IT solution + BluePrism RPA</mark>
+                                <br/>
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                [Team Size] 6 RPA Developers, 10-15 IT developers
+                                <br/>
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                [Contribution] Complete development within 1 month, conduct sucessful SIT and UAT within 2 week, deploy into production ahead of project plan for 3 weeks
+                                <br/>
+                            </li>
+                        </ul>
+                    </li><li>
+                        <h3>
+                            <span>Project Sprout</span>
+                            <time>2024.04 - 2024.11</time>
+                        </h3>
+                        <ul class="info-content">
+                        	<li>Project Introduction：Large scale project with cross-team collaboration, build up end to end document processing flow to replace paper form applications</li>
+                            <li>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [Responsibility]Work with IT Business Analyst to assess RPA integration point, develop RPA solution to connect with Power Platform via APIs
+                                <br/>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [Enviorment]<mark>Power Platform + AI Builder + Dataverse + NOVA API + BluePrism RPA</mark>
+                                <br/>
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                [Team Size] 5 RPA Devlopers, 3 IT developers
+                                <br/>
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                [Contribution] Deploy 8 forms within 6 months, break through difficulties of legacy HWS machine and instant approval
+                                <br/>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            
+            <!-- 专业技能 -->
+            <section class="work info-unit">
+                <h2>
+                    <i class="fa fa-code" aria-hidden="true"></i>Professional Skills</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <ul class="info-content">
+                            <li>Strong knowlege in RPA technologies, Power Platform and Power Automate Desktop</li>
+                            <li>Good understanding of system development lifecycle and Agile delivery approach</li>
+                            <li>Experience in use case assessment, implementation and delivery lifecycle</li>
+                            <li>Experience in business and process analysis, change initiatives and re-engineering</li>
+                            <li>Strong Microsoft Office skills, including excel, PowerPoint, Word, Teams</li>
+                            <li>Proficient in digital tools, including JIRA, confluence, Visio</li>
+                            <li>Proficient in spoken and written English and Chinese (Cantonese and Mandarin)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            
+            <!-- 教育经历 -->
+            <section class="edu info-unit">
+                <h2>
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>Education</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <span>Guangdong Univ of Foreign Study - Bachelor of Business English</span>
+                            <time>2007.9 - 2010.6</time>
+                        </h3>
+                    </li>
+                    
+                </ul>
+            </section>
+
+            <!-- 自我评价 -->
+            <section class="work info-unit">
+                <h2>
+                    <i class="fa fa-pencil" aria-hidden="true"></i>Self-assessment</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <ul class="info-content">
+                            <li>15 years of banking experience, knowledge of credit card and loans, KYC, CDD and EDD, AML, transformation domains</li>
+                            <li>3 years of expereience in project management and 5 years of expereience in automation development</li>
+                	        <li>Fast learner</li>
+                            <li>Strong communication skills</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                	
+                </ul>
+            </section>
+        </section>
+    </article>
+
+
+
+    <footer class="footer">
+        <p>© 2024~2025 Lena Feng.Last update date
+            <time>2025 September</time>.</p>
+    </footer>
+
+    <!-- 侧栏 -->
+    <aside>
+        <ul>
+            <li>
+                <a href="https://github.com/AgnesLen/agneslen.github.io" target="_blank">源码</a>
+            </li>
+        </ul>
+    </aside>
+
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
