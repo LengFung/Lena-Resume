@@ -1,7 +1,7 @@
 ﻿
 # 个人简历模板
 
-[https://lengfung.github.io/Lena-Resume/)
+https://lengfung.github.io/Lena-Resume/
 
 ## Intro
 
