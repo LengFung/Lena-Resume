@@ -1,20 +1,19 @@
 ﻿
 # 个人简历模板
 
-[https://agneslen.github.io/](https://agneslen.github.io/)
+[https://lengfung.github.io/Lena-Resume/)
 
 ## Intro
 
-此项目是我在网上找来的简历模板，修改后作为求职用。
+This is used for CV template
 
 ## Object
 
-程序员求职
+Job Search
 
 ## Preview
 
 ### PC端
-![](assets/images/pc.png)
+
 
 ### 移动端
-![](assets/images/ip.png)
